@@ -1,13 +1,14 @@
 # Scale 360 Interview's Assignment
 This projects is to creates a  RESTful API for a simple "To Do List"
 
-## Prerequisites
+# Prerequisites
 * Maven or Gradle (for how to install Maven or Gradle please see to this url below
 	* Gradle : https://docs.gradle.org/3.3/userguide/installation.html
 	* Maven : https://maven.apache.org/install.html
 * Mongo DB (for how to install mongo DB please see to this url below 
 	* Mongo DB : https://docs.mongodb.com/manual/installation/
 * Eclipse (optional)
+* Postman chromes adds-on (for REST request)
 
 # Made With
 * Eclipse IDE
@@ -16,6 +17,9 @@ This projects is to creates a  RESTful API for a simple "To Do List"
 * Maven Dependency management
 * Mongo DB
 
+# Installation
+
+
 # How to Use
 This REST Api is can do a simple CRUD operation with MongoDB
 The parameter use in a REST Request (such as GET POST PUT DELETE) were list as below
@@ -23,17 +27,39 @@ The parameter use in a REST Request (such as GET POST PUT DELETE) were list as b
 *description
 *status
 
-The api can also use method below to search a to do task in the database
+URL Params
 ```
 findBytask?task=value
 findBydescription?description=value
 findBystatus?status=value
 ```
 
-for example query
+DATA PARAMS (POST,PUT)
+the default value of the parameter is below
+*description = default
+*status = pending
+```
+	{
+		"task" : "test1",
+		"description : "test1",
+		"status" : "pending"
+	}
+```
+
+URL
+```
+search all : /taskList
+search specific records : /taskList/596110911d7d6e8162d7e784
+
+```
+
+Sample Call
 ```
 http://localhost:8080/taskList/search/findBystatus?status=pending
-	```
+
+```
+
+```
 			{
 	  "_embedded" : {
 	    "taskList" : [ {
@@ -68,7 +94,7 @@ http://localhost:8080/taskList/search/findBystatus?status=pending
 	    }
 	  }
 	}
-	```
+
 ```
 
 # Author

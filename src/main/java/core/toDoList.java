@@ -23,8 +23,8 @@ public class toDoList {
     private String id;
 	
     private String task;
-    private String description;
-    private String status;  
+    private String description = "default";
+    private String status = "pending";  
     
     public String getTask() {
     	return task;
@@ -42,7 +42,8 @@ public class toDoList {
 		return status;
 	}
 	public void setStatus(String status) {
-		this.status = status;
+		this.status = "pending";
+		
 	}
 
  }
