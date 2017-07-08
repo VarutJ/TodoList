@@ -24,16 +24,16 @@ The parameter use in a REST Request (such as GET POST PUT DELETE) were list as b
 *status
 
 The api can also use method below to search a to do task in the database
-'''
+```
 findBytask?task=value
 findBydescription?description=value
 findBystatus?status=value
-'''
+```
 
 for example query
-'''
+```
 http://localhost:8080/taskList/search/findBystatus?status=pending
-	'''
+	```
 			{
 	  "_embedded" : {
 	    "taskList" : [ {
@@ -68,8 +68,8 @@ http://localhost:8080/taskList/search/findBystatus?status=pending
 	    }
 	  }
 	}
-	'''
-'''
+	```
+```
 
 # Author
 * **Varut Jitthamwong** - A job applicants for Scale 360 
