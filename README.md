@@ -8,7 +8,7 @@ This projects is to creates a  RESTful API for a simple "To Do List"
 * Mongo DB (for how to install mongo DB please see to this url below 
 	* Mongo DB : https://docs.mongodb.com/manual/installation/
 * Eclipse (optional)
-* Postman chromes adds-on (for REST request)
+* Postman Chromes adds-on (for REST request)
 
 # Made With
 * Eclipse IDE
@@ -18,7 +18,11 @@ This projects is to creates a  RESTful API for a simple "To Do List"
 * Mongo DB
 
 # Installation
-
+* First User has to install MongoDB (for installation process please see in mongoDB site provided above)
+* Create an Executable jar using Maven.
+* This application can be run on Maven
+* Or run the application using Spring Boot plugin in Eclipse IDE.
+* User do not have to create a database or collections on DB. The application will create by itself if it isn't already existed.
 
 # How to Use
 This REST Api is can do a simple CRUD operation with MongoDB
@@ -96,6 +100,9 @@ http://localhost:8080/taskList/search/findBystatus?status=pending
 	}
 
 ```
+
+#Remark
+The database still has no authentication security at this moment.
 
 # Author
 * **Varut Jitthamwong** - A job applicants for Scale 360 
